@@ -41,6 +41,7 @@
 		CE2E941B20D53FC600FA6481 /* WeatherDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E941A20D53FC600FA6481 /* WeatherDayViewViewModel.swift */; };
 		CE2E941E20D54B7A00FA6481 /* WeatherDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E941D20D54B7A00FA6481 /* WeatherDayRepresentable.swift */; };
 		CE2E943220D5687D00FA6481 /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E943120D5687D00FA6481 /* SettingsViewTimeViewModelTests.swift */; };
+		CE45FADA20EB72E200B41664 /* darksky.json in Resources */ = {isa = PBXBuildFile; fileRef = CE45FAD920EB72E200B41664 /* darksky.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		CE2E942320D5564C00FA6481 /* CloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E942720D5564C00FA6481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2E943120D5687D00FA6481 /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
+		CE45FAD920EB72E200B41664 /* darksky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darksky.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,8 +369,8 @@
 			isa = PBXGroup;
 			children = (
 				CE2E943020D556AB00FA6481 /* Test Cases */,
-				CE2E942F20D556A200FA6481 /* Extensions */,
-				CE2E942E20D5569600FA6481 /* Stubs */,
+				CE45FAD820EB720D00B41664 /* Stubs */,
+				CE45FAD720EB71FE00B41664 /* Extensions */,
 				CE2E942D20D5567100FA6481 /* Supporting Files */,
 			);
 			path = CloudyTests;
@@ -382,26 +384,27 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CE2E942E20D5569600FA6481 /* Stubs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stubs;
-			sourceTree = "<group>";
-		};
-		CE2E942F20D556A200FA6481 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		CE2E943020D556AB00FA6481 /* Test Cases */ = {
 			isa = PBXGroup;
 			children = (
 				CE2E943120D5687D00FA6481 /* SettingsViewTimeViewModelTests.swift */,
 			);
 			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		CE45FAD720EB71FE00B41664 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE45FAD820EB720D00B41664 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				CE45FAD920EB72E200B41664 /* darksky.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,7 +457,7 @@
 				TargetAttributes = {
 					CC89B4161D9FE314006BFD6E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Q6Y429W25C;
+						DevelopmentTeam = Y46D5WH659;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -501,6 +504,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE45FADA20EB72E200B41664 /* darksky.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q6Y429W25C;
+				DEVELOPMENT_TEAM = Y46D5WH659;
 				INFOPLIST_FILE = "Cloudy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Cloudy;
@@ -686,7 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q6Y429W25C;
+				DEVELOPMENT_TEAM = Y46D5WH659;
 				INFOPLIST_FILE = "Cloudy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Cloudy;

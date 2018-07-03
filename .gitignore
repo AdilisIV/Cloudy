@@ -1,0 +1,16 @@
+Cloudy.xcworkspace
+images
+Podfile.lock
+Pods
+.DS_Store
+
+## Build generated
+build/
+DerivedData/
+
+### Xcode Patch ###
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+Cloudy\.xcworkspace/xcuserdata/ricardbrendson\.xcuserdatad/UserInterfaceState\.xcuserstate
